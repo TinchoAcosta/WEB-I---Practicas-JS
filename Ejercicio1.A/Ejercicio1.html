@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Días vividos</title>
+    <script src="calculo.js"></script>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        fieldset{
+            background-color: rgb(21, 4, 59);
+        }
+        legend{
+            background-color: rgb(0, 102, 190);
+            color: white;
+        }
+        label{
+            background-color: rgb(0, 102, 190);
+            color: white;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .button{
+            border: none;
+            border-radius: 100%;
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(0, 102, 190);
+            color: white;
+            box-shadow: 5px 5px 10px gray;
+            transition: all 0.5s ease;
+        }
+        .button:hover{
+            background-color: blue;
+            box-shadow: -5px -5px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Calculador de días vividos:</legend>
+            <label for="nombre">Ingrese su nombre aquí</label><br>
+            <input type="text" id="nombre" name="campoNombre" value="" autofocus><br><br>
+            <label for="edad">Ingrese su edad aquí</label><br>
+            <input type="text" id="edad" name="campoEdad" value=""><br><br>
+            <input type="button" class="button" value="Confirmar" onclick="calculoDias()">
+        </fieldset>
+    </form>
+</body>
+</html>

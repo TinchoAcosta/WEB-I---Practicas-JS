@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivina el numero</title>
+    <script>
+        let cont = 0
+        let num = Math.floor(Math.random() * 1000000) + 1
+
+        function juego(){            
+            let usserNum = document.getElementById("num").value
+            if (usserNum > num) {
+                window.alert("El numero " + usserNum + " es MAYOR al objetivo.")
+                cont++
+            }else if(usserNum < num){
+                window.alert("El numero " + usserNum + " es MENOR al objetivo.")
+                cont++
+            }else{
+                window.alert("¡Felicidades! el numero es " + num + "| INTENTOS: " + cont)
+            }
+            window.alert(num)
+            
+        }
+    </script>
+</head>
+<body>
+    <label for="num">Adivine el numero entre el uno y el 1 millon:</label>
+    <input type="text" name="num" id="num">
+    <input type="button" value="¿Listo PERRA?" onclick="juego()">   
+</body>
+</html>

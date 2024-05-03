@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ej 3</title>
+        <script>
+            function arreglo(){
+                var lista = new Array ('a','b','c','1','x','9','d','4');
+                var item ;
+                var pat = /\d/
+                for (item in lista){
+                    if (!pat.test(lista[item])){
+                        console.log(lista[item])
+                        document.write(lista[item])
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="test" onclick="arreglo()">
+    </body>
+</html>
